@@ -35,39 +35,46 @@ class _LoginScreenState extends State<LoginScreen> {
               'images/talk.png',
               scale: 3,
             )),
-        Positioned(
-            bottom: mq.height * .30,
-            left: mq.width * .05,
-            width: mq.width * .9,
-            height: mq.height * .06,
-            child: ElevatedButton.icon(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green.shade200,
-                  shape: StadiumBorder(),
-                  elevation: 1),
-              onPressed: () {
-                Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (_) =>
-                            HomeScreen())); // navigator push replacement for not coming to login page once u have logged in
-              },
-              icon: Image.asset(
-                'images/google.png',
-                height: mq.height * .038,
-                width: mq.width * .11,
-              ),
-              label: RichText(
-                  text: TextSpan(
-                      style: TextStyle(color: Colors.black, fontSize: 18),
-                      children: [
-                    TextSpan(text: 'Sign in with'),
-                    TextSpan(
-                        text: ' Google',
-                        style: TextStyle(fontWeight: FontWeight.bold))
-                  ])),
-            ))
-      ]),
+           Container(
+              alignment: Alignment.center,
+            child: Positioned(
+                bottom: mq.height * .30,
+                left: mq.width * .05,
+                width: mq.width * .7,
+                height: mq.height * .048,
+                child: ElevatedButton.icon(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green.shade200,
+                      shape: StadiumBorder(),
+                      elevation: 2,
+                    alignment: Alignment.center,
+
+                  ),
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) =>
+                                HomeScreen())); // navigator push replacement for not coming to login page once u have logged in
+                  },
+                  icon: Image.asset(
+                    'images/google.png',
+                    height: mq.height * .027,
+                    width: mq.width * .06,
+                  ),
+                  label: RichText(
+                      text: TextSpan(
+                          style: TextStyle(color: Colors.black, fontSize: 18),
+                          children: [
+                        TextSpan(text: 'Sign in with'),
+                        TextSpan(
+                            text: ' Google',
+                            style: TextStyle(fontWeight: FontWeight.bold))
+                      ])),
+                )),
+          ),
+
+              ]),
     );
   }
 }

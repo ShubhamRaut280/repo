@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "427533736729",
+    "project_id": "talk-abb49",
+    "storage_bucket": "talk-abb49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427533736729:android:5679edee4a6f062ab48388",
+        "android_client_info": {
+          "package_name": "com.example.talk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427533736729-f0goac4lii97nkiq4vovrtjjm32dh1bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqMT0EQgWrIKwcsjLSKsWnqar2XPsCxYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427533736729-f0goac4lii97nkiq4vovrtjjm32dh1bl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -18,17 +18,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Talk'),
-        leading: Icon(CupertinoIcons.home),
+        leading: Icon(CupertinoIcons.person_crop_circle),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))
+          IconButton(onPressed: () {}, icon: Icon(Icons.more_vert_rounded))
         ],
       ),
+      // drawer: Drawer(),
       floatingActionButton: Padding(
         padding: EdgeInsets.only(bottom: 15, right: 10),
         child: FloatingActionButton(
           onPressed: () {},
-          child: Icon(Icons.person_add_alt_1),
+          child: Icon(Icons.add_comment_rounded),
         ),
       ),
     );
