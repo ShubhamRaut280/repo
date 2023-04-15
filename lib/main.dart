@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:talk/screens/auth/login_screen.dart';
-import 'package:talk/screens/home_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 //global object for accesing screen size
 late Size mq; //media query
@@ -10,6 +11,10 @@ late Size mq; //media query
 void main() {
   _initializeFirebase();
   runApp(const MyApp());
+  // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]) .then((value) =>
+  // {
+  //
+  // });
 }
 
 class MyApp extends StatelessWidget {

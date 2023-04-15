@@ -63,6 +63,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '427533736729',
     projectId: 'talk-abb49',
     storageBucket: 'talk-abb49.appspot.com',
+    androidClientId: '427533736729-l26rf9ufngtagde0tss2uvlbsi84p7sr.apps.googleusercontent.com',
     iosClientId: '427533736729-mokq6h638uoi9tiqar0f8vjvp7cuhp3n.apps.googleusercontent.com',
     iosBundleId: 'com.example.talk',
   );
