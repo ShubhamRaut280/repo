@@ -54,7 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text('Welcome to Talk'),
+        title: Text('Welcome to Gupshup'),
       ),
       body: Stack(
         children: [
@@ -75,7 +75,7 @@ class _LoginScreenState extends State<LoginScreen> {
               height: mq.height * .048,
               child: ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green.shade200,
+                  backgroundColor: Colors.lightGreen.shade200,
                   shape: StadiumBorder(),
                   elevation: 2,
                   alignment: Alignment.center,

@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: EdgeInsets.only(bottom: 15, right: 10),
         child: FloatingActionButton(
           onPressed: () {},
-          child: Icon(Icons.add_comment_rounded),
+          child: Icon(Icons.add_comment_outlined),
         ),
       ),
     );

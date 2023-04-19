@@ -8,8 +8,10 @@ import 'package:google_sign_in/google_sign_in.dart';
 //global object for accesing screen size
 late Size mq; //media query
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   _initializeFirebase();
+
   runApp(const MyApp());
   // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]) .then((value) =>
   // {
