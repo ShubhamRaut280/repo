@@ -29,9 +29,12 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: EdgeInsets.only(bottom: 15, right: 10),
         child: FloatingActionButton(
           onPressed: () {},
-          child: Icon(Icons.add_comment_outlined),
+          child: Icon(Icons.add_comment_rounded),
         ),
       ),
     );
   }
 }
+
+// await.FirebaseAuth.instance.SignOut();
+            // await.GoogleSignIn().SignOut();
