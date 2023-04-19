@@ -24,7 +24,11 @@ class _LoginScreenState extends State<LoginScreen> {
   late Size mq;
 
   _handleGoogleBtnClick() {
+    // for showing progress bar
+    Dialogs.showProgressBar(context);
     _signInWithGoogle().then((user) {
+      // for hiding progress bar
+      Navigator.pop(context);
       if (user != null) {
         log('\nUser: ${user.user}');
         log('\nUserAdditionalInfo: ${user.additionalUserInfo}');
