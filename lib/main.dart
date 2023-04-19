@@ -13,10 +13,6 @@ void main() async {
   _initializeFirebase();
 
   runApp(const MyApp());
-  // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]) .then((value) =>
-  // {
-  //
-  // });
 }
 
 class MyApp extends StatelessWidget {
