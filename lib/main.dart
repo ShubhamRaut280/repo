@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:talk/screens/auth/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:talk/screens/splash_screen.dart';
 import 'firebase_options.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
             iconTheme: IconThemeData(color: Colors.black)),
       ),
-      home: const LoginScreen(),
+      home: const SplashScreen(),
 
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
