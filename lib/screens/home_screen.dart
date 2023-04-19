@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import '../main.dart';
+import '../widgets/chat_user_card.dart';
 
 void main() {
   runApp(HomeScreen());
@@ -19,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Talk'),
+        title: Text('Gupshup'),
         leading: Icon(CupertinoIcons.person_crop_circle),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
@@ -37,6 +39,12 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Icon(Icons.add_comment_rounded),
         ),
       ),
+      body: ListView.builder(
+          itemCount: 20,
+          physics: BouncingScrollPhysics(),
+          itemBuilder: (context, index) {
+            return const ChatUserCard();
+          }),
     );
   }
 }

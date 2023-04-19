@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:talk/screens/auth/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:talk/screens/splash_screen.dart';
 import 'firebase_options.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 
 //global object for accesing screen size
 late Size mq; //media query
@@ -25,7 +23,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Talk',
       theme: ThemeData(
-        primarySwatch: Colors.cyan,
+        primarySwatch: Colors.blue,
 
         // app bar theme
         appBarTheme: const AppBarTheme(
